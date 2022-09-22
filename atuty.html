@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+
+
+    <style>
+        :root {
+            --brand-blue: #2196f3;
+            --header-line: #ececec;
+            --primary-text: #757575;
+            --secondary-text: #212121;
+            --white-color: #fff;
+            --black-color: #000;
+            --footer-background: #2f303a;
+            --background-card: #f5f4fa;
+            --icon-background: #afb1b8;
+            --backdrop-background: rgba(0, 0, 0, 0.1);
+            --top-section__overlay: #2f303a66;
+            --border: #eeeeee;
+            --background-outside: #e5e5e5;
+            --footer-link: #ffffff99;
+            --footer-icon: #ffffff1a;
+            /* background-backdrop: #00000033; */
+            --placeholder-text: #75757580;
+            --border-color: #21212133;
+            --box-shadow: #00000026;
+        }
+
+        /* ----------------------------General------------------------------- */
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .section {
+            padding-top: 94px;
+            border: 1px solid tomato;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            /* justify nie działa :/ */
+            justify-content: space-between;
+        }
+
+        .grid__icon-box {
+            position: relative;
+            margin-bottom: 30px;
+            width: 270px;
+            height: 120px;
+            background-color: var(--background-card);
+        }
+
+        .grid__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .grid__header {
+            margin-bottom: 10px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--secondary-text);
+        }
+
+        .grid__description {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: var(--primary-text);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="section container">
+        <div class="container">
+            <ul class="grid">
+                <li class="grid__item">
+                    <div class="grid__icon-box">
+                        <svg width="65.32" height="70" class="grid__icon">
+                            <use xlink:href="./images/icons.svg#antenna-logo"></use>
+                        </svg>
+                    </div>
+                    <h3 class="grid__header">Lorem ipsum</h3>
+                    <p class="grid__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                        illum
+                        officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                    </p>
+                </li>
+                <li class="grid__item">
+                    <div class="grid__icon-box">
+                        <svg width="65.32" height="70" class="grid__icon">
+                            <use xlink:href="./images/icons.svg#clock-logo"></use>
+                        </svg>
+                    </div>
+                    <h3 class="grid__header">Lorem ipsum</h3>
+                    <p class="grid__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                        illum
+                        officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                    </p>
+                </li>
+                <li class="grid__item">
+                    <div class="grid__icon-box">
+                        <svg width="65.32" height="70" class="grid__icon">
+                            <use xlink:href="./images/icons.svg#diagram-logo"></use>
+                        </svg>
+                    </div>
+                    <h3 class="grid__header">Lorem ipsum</h3>
+                    <p class="grid__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                        illum
+                        officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                    </p>
+                </li>
+                <li class="grid__item">
+                    <div class="grid__icon-box">
+                        <svg width="65.32" height="70" class="grid__icon">
+                            <use xlink:href="./images/icons.svg#astronaut-logo"></use>
+                        </svg>
+                    </div>
+                    <h3 class="grid__header">Lorem ipsum</h3>
+                    <p class="grid__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                        illum
+                        officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
